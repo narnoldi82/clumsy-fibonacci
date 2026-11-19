@@ -9,7 +9,7 @@ def print_fibonacci_series(length: int) -> list[int]:
         raise ValueError("length must be non-negative")
 
     series: list[int] = []
-    current, following = 0, 2
+    current, following = 0, 1
 
     for _ in range(length):
         series.append(current)
@@ -22,4 +22,3 @@ def print_fibonacci_series(length: int) -> list[int]:
 
 if __name__ == "__main__":
     print_fibonacci_series(10)
-
